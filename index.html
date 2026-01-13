@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestionnaire de tâche</title>
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <img src="media/dog-sleeping-napping.gif" id="dog" alt="ZZZ">
+  <audio id="dog-music" src="media/green_room.m4a" preload="auto" loop></audio>
+  <audio id="dog-leave" src="media/exit_g.m4a" preload="auto"></audio>
+
+  <main>
+    <h1>== TODO LIST ==</h1>
+    <p class="subtitle">Evaluation de JS: gestionnaire de tâche</p>
+
+    <form id="task-form">
+      <input type="text" id="title" placeholder="> Titre" required />
+      <textarea id="description" placeholder="> Description"></textarea>
+      <select id="status">
+        <option value="à faire">À faire</option>
+        <option value="en cours">En cours</option>
+        <option value="terminée">Terminée</option>
+        <option value="bloquée">Bloquée</option>
+      </select>
+      <button type="submit">[ AJOUTER ]</button>
+    </form>
+
+    <div id="filters">
+      <button data-status="toutes">[ Toutes ]</button>
+      <button data-status="à faire">[ À faire ]</button>
+      <button data-status="en cours">[ En cours ]</button>
+      <button data-status="terminée">[ Terminées ]</button>
+      <button data-status="bloquée">[ Bloquées ]</button>
+    </div>
+
+    <input type="text" id="search" placeholder="> Chercher une tâche..." />
+
+    <section id="task-list"></section>
+  </main>
+  <div id="dog-message" class="dialogue-box" style="display: none;">
+    <div class="dialogue-text">* Il semble que le chien ait été un peu trop sollicité...</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

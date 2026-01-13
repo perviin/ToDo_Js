@@ -1,0 +1,159 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  margin: 0;
+  padding: 3em;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  border: 2px solid #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.6em;
+  margin-bottom: 5em;
+  color: #ccc;
+}
+
+form, #filters, #search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+#filters button.active {
+  color: yellow;
+  border-color: yellow;
+}
+
+input, textarea, select, button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: 0.6em;
+  flex: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+#task-list {
+  display: grid;
+  gap: 1em;
+}
+
+.blue {
+  color: #89cff0;
+  border-color: #89cff0;
+}
+
+.orange {
+  color: #ffb347;
+  border-color: #ffb347;
+}
+
+.green {
+  color: #77dd77;
+  border-color: #77dd77;
+}
+
+.red {
+  color: #ff6961;
+  border-color: #ff6961;
+}
+
+.card {
+  border: 2px solid #fff;
+  padding: 1em;
+  font-size: 0.6em;
+}
+
+.card-title {
+  font-weight: bold;
+  margin: 0.5em;
+  font-size: 1.5em;
+}
+
+.card-text {
+  margin-bottom: 0.5em;
+}
+
+.card button {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+}
+
+.card button:hover {
+  background-color: #222;
+}
+
+.empty-message {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.6em;
+  color: #888;
+}
+
+img {
+  position: relative;
+  margin-left: 60em;
+  height: 70px;
+}
+
+img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#dog.dancing {
+  height: 9em;
+}
+
+.dialogue-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  border: 2px solid #fff;
+  padding: 2em;
+  width: 90%;
+  max-width: 700px;
+  font-size: 0.8em;
+  line-height: 2em;
+  text-align: center;
+  z-index: 9999;
+  display: none;
+}
+
+#dialogue-text {
+  white-space: pre-wrap;
+  min-height: 4em;
+}
+
+#dog.runaway {
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 0;
+}
